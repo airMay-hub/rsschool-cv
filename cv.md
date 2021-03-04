@@ -42,12 +42,12 @@ RS School JavaScript/Front-end course, 2021
 ### Code example:
 
 ```
-<!doctype html>
-<html lang="en">
-   <body>
-     <h1>Heading</h1>
-   </body>
-</html>
+    <!doctype html>
+    <html lang="en">
+    <body>
+        <h1>Heading</h1>
+    </body>
+    </html>
 ```
 
 ## SKILLS
