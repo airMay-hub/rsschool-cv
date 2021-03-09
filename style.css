@@ -1,184 +1,191 @@
 body {
-  font-family: "Exo", "Verdana", sans-serif;
-  margin: 0;
+    font-family: "Exo", "Verdana", sans-serif;
+    margin: 0;
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 img,
 a {
-  display: block;
+    display: block;
 }
 
 .page-header {
-  width: 900px;
-  margin: 0 auto;
-  padding: 30px 0 30px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
 }
 
 .conteiner-header {
-  display: flex;
-  width: auto;
-  justify-content: space-between;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
 }
 
 .main-photo {
-  margin-left: 70px;
-  margin-top: auto;
-  margin-bottom: auto;
+    margin-left: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .main-photo img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .name {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 40px;
-  text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 40px;
+    text-align: right;
 }
 
 .page-main {
-  display: flex;
-  justify-content: flex-start;
-  width: 900px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
 }
 
 .fit-img {
-  width: fit-content;
+    width: fit-content;
 }
 
 .brief-information {
-  width: 270px;
-  background-color: #7dcea0;
-  padding-bottom: 70px;
+    width: 270px;
+    background-color: #7dcea0;
+    padding-bottom: 70px;
 }
 
 .brief-information a:link {
-  color: black;
+    color: black;
 }
+
 .brief-information a:visited {
-  color: #34495e;
+    color: #34495e;
 }
+
 .brief-information a:active {
-  color: #34495e;
+    color: #34495e;
 }
 
 .with-background {
-  background-color: #34495e;
-  color: white;
-  width: 135px;
-  margin: 25px auto;
-  padding: 2px 30px;
-  text-align: center;
+    background-color: #34495e;
+    color: white;
+    width: 135px;
+    margin: 25px auto;
+    padding: 2px 30px;
+    text-align: center;
 }
 
 .fit {
-  display: flex;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-left: 28px;
-  width: 250px;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
 }
 
 .fit p,
 a {
-  margin: auto 0;
-  padding-left: 10px;
+    margin: auto 0;
+    padding-left: 10px;
 }
 
 .fit-2 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-left: 28px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 45px;
 }
 
 .progress {
-  height: 4px;
-  position: relative;
-  background: #5555552f;
-  border-radius: 4px;
+    height: 4px;
+    position: relative;
+    background: #5555552f;
+    border-radius: 4px;
 }
 
-.progress > span {
-  display: block;
-  height: 100%;
-  background-color: rgb(43, 194, 83);
-  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  position: relative;
-  overflow: hidden;
+.progress>span {
+    display: block;
+    height: 100%;
+    background-color: rgb(43, 194, 83);
+    box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
 }
 
 .information {
-  width: 630px;
-  margin: 0 10px 0 70px;
+    width: 630px;
+    margin: 0 10px 0 70px;
 }
 
 .fit-3 {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .fit-3 .fit-img {
-  margin-top: auto;
-  margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .fit-3 .underlined {
-  margin: 0;
-  margin-left: 20px;
-  margin-top: auto;
-  border-bottom: 1px solid;
-  width: 500px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: auto;
+    border-bottom: 1px solid;
+    width: 500px;
 }
 
 .information p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .page-footer {
-  width: 900px;
-  margin: 0 auto;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .conteiner-footer {
-  display: flex;
-  width: auto;
-  margin: 0 auto;
-  justify-content: space-between;
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .footer-links {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .fit-footer {
-  display: flex;
+    display: flex;
 }
 
 .rsschool-icon {
-  margin-left: 220px;
+    margin-left: 220px;
 }
 
 .page-footer a:link {
-  color: #27ae60;
+    color: #27ae60;
 }
+
 .page-footer a:visited {
-  color: #34495e;
+    color: #34495e;
 }
+
 .page-footer a:active {
-  color: #34495e;
+    color: #34495e;
 }
 
 time {
-  margin-top: auto;
-  margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
