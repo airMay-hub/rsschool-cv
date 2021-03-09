@@ -147,6 +147,10 @@ a {
     margin-bottom: 20px;
 }
 
+.information .info {
+    margin-left: 50px;
+}
+
 .page-footer {
     width: 900px;
     margin: 0 auto;
