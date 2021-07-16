@@ -41,9 +41,9 @@ RS School JavaScript/Front-end course, 08.03 - 25.04.2021
     </html>
 ```
 
-[Codewars](https://www.codewars.com/users/airMay-hub/completed_solutions)\
+[Codewars](https://www.codewars.com/users/airMay-hub/completed_solutions)
 
-[Typical arrays problems task](https://github.com/airMay-hub/typical-arrays-problems/commit/19b1c7455b5572eec541d118e532f89c277fd8b3)\
+[Typical arrays problems task](https://github.com/airMay-hub/typical-arrays-problems/commit/19b1c7455b5572eec541d118e532f89c277fd8b3)
 
 ## SKILLS
 
