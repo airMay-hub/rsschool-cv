@@ -16,12 +16,10 @@ ENGLISH (A2)
 ## ABOUT ME
 
 My name is Maryia Tomkiavichutse.\
-Now I hesitate between two professions: layout designer and developer.\
-I am passionate about beatiful product (websites or apps).\
-Sometimes I need to do creative things. Sometimes I need to solve boring tasks.\
-That's why I hesitate. And I think that one brain can not do creative thing all the time.\
-My strengths is preseverance. I can sit at the computer all day.\
-But I don't forget about the rest. Good rest ensures productive work.
+My goal is to develop and grow in the field of Web development.\
+I am passionate about beatiful, high quality and smart product\ 
+(websites or apps) and I would like to do the same.\
+My strengths is perseverance and responsibility.
 
 ## EDUCATION
 
