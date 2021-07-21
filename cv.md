@@ -50,7 +50,7 @@ RS School JavaScript/Front-end course, 08.03 - 25.04.2021
 #### Core JS
 
 * Knows that strict mode exists
-* Knows that strict mode exists
+* Variables, Values, Types (number, string, boolean, object, null, undefined), declaration (var, let, const)
 * Expressions (basic of auto type conversions, comparison), Operators, Statements (literals, conditions, loops)
 * Objects (create, modify)
 * Arrays (create, modify, indexes, length, built-in methods: sorting, filtering, search, iterating)
