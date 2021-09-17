@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Обнуление стилей */
 * {
   padding: 0;
@@ -67,7 +68,6 @@ ul, li {
 }
 
 /* контент */
-
 .wrap {
   width: 100%;
   min-height: 100%;
@@ -77,21 +77,21 @@ ul, li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .main-content-wrap {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: auto;
 }
 
@@ -103,46 +103,39 @@ a {
   width: 100%;
   background-color: #1234c4;
 }
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 .header-flex {
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+
 .header__title-1 {
   font-family: "Michroma",sans-serif;
   text-transform: uppercase;
   margin: 0 0 10px 0;
 }
+
 .header__subtitle {
   font-family: "Roboto Mono",monospace;
   margin: 0 0 20px 0;
-}
-
-.contacts {
 }
 
 .header__contacts {
   margin: 0 0 20px 0;
 }
 
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .contacts__title-2 {
   margin: 0 0 10px 0;
-}
-
-.title-2 {
-  font-family: "Roboto Mono",monospace;
-  text-transform: uppercase;
-}
-
-.contacts__list {
 }
 
 .contacts__item {
@@ -150,17 +143,13 @@ a {
   margin: 0 0 5px 0;
 }
 
-.header__language {
-}
-
-.language {
+.title-2 {
+  font-family: "Roboto Mono",monospace;
+  text-transform: uppercase;
 }
 
 .language__title-2 {
   margin: 0 0 10px 0;
-}
-
-.language__list {
 }
 
 .language__item {
@@ -168,18 +157,17 @@ a {
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
-.header__navigation {
-}
-.navigation {
-}
+
 .navigation__list {
   border-top: 1px solid #bababa;
 }
+
 .navigation__item {
   width: 150px;
   border-bottom: 1px solid #bababa;
   padding: 10px 0;
 }
+
 .navigation__link {
   text-align: right;
   text-transform: uppercase;
@@ -192,8 +180,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .size {
@@ -205,23 +193,22 @@ a {
   padding: 30px 0 0 0;
 }
 
-.inner-wrap {
-  padding: 0 30px;
-  margin: 0 0 30px 0;
-}
-
 .about__title-2 {
   margin: 0 0 30px 0;
 }
 
 .about__paragraph {
   font-family: "Michroma",sans-serif;
-  text-transform: uppercase;
   font-size: 3vw;
   line-height: 4vw;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   border-bottom: 2px solid #bababa;
   padding-bottom: 50px;
+}
+
+.inner-wrap {
+  padding: 0 30px;
+  margin: 0 0 30px 0;
 }
 
 .education {
@@ -232,12 +219,8 @@ a {
   margin: 0 0 30px 0;
 }
 
-.education__list {
-}
-
 .education__item {
   font-family: "Michroma",sans-serif;
-  text-transform: uppercase;
   font-size: 2vw;
   line-height: 3vw;
   margin: 0 0 10px 0;
@@ -263,7 +246,6 @@ a {
 
 .experience__link {
   font-family: "Michroma",sans-serif;
-  text-transform: uppercase;
   font-size: 2vw;
   line-height: 3vw;
   margin: 0 0 10px 0;
@@ -283,7 +265,8 @@ a {
   border-bottom: 1px solid #bababa;
 }
 
-.languages__title-3 {
+.skills__communication-protocols {
+  margin: 0 0 30px 0;
 }
 
 .title-3 {
@@ -295,24 +278,9 @@ a {
   margin: 0 0 20px 0;
 }
 
-.core-js {
-}
-
-.core-js__title-4 {
-}
-
-.title-4 {
-  font-family: "Roboto Mono",monospace;
-  margin: 0 0 20px 0;
-}
-
-.core-js__list {
-}
-
 .core-js__item {
   font-family: "Michroma",sans-serif;
   margin: 0 0 5px 45px;
-  text-transform: uppercase;
   font-size: 1vw;
   line-height: 2vw;
   list-style-type: square;
@@ -320,23 +288,18 @@ a {
   letter-spacing: 1px;
 }
 
-.languages__html {
+.title-4 {
+  font-family: "Roboto Mono",monospace;
   margin: 0 0 20px 0;
 }
 
-.html {
-}
-
-.html__title-4 {
-}
-
-.html__list {
+.languages__html {
+  margin: 0 0 20px 0;
 }
 
 .html__item {
   font-family: "Michroma",sans-serif;
   margin: 0 0 5px 45px;
-  text-transform: uppercase;
   font-size: 1vw;
   line-height: 2vw;
   list-style-type: square;
@@ -348,28 +311,14 @@ a {
   margin: 0 0 20px 0;
 }
 
-.css {
-}
-
-.css__title-4 {
-}
-
-.css__list {
-}
-
 .css__item {
   font-family: "Michroma",sans-serif;
   margin: 0 0 5px 45px;
   list-style-type: square;
-  text-transform: uppercase;
   font-size: 1vw;
   line-height: 2vw;
   padding: 0 0 0 10px;
   letter-spacing: 1px;
-}
-
-.skills__communication-protocols {
-  margin: 0 0 30px 0;
 }
 
 .communication-protocols {
@@ -377,35 +326,17 @@ a {
   margin: 0 0 50px 0;
 }
 
-.communication-protocols__title-3 {
-}
-
 .communication-protocols__paragraph {
   font-family: "Michroma",sans-serif;
-  text-transform: uppercase;
   font-size: 1vw;
   line-height: 2vw;
   letter-spacing: 1px;
   margin: 0 0 20px 0;
 }
 
-.skills__tools {
-}
-
-.tools {
-
-}
-
-.tools__title-3 {
-}
-
-.tools__list {
-}
-
 .tools__item {
   font-family: "Michroma",sans-serif;
   margin: 0 0 5px 0;
-  text-transform: uppercase;
   font-size: 1vw;
   line-height: 2vw;
   letter-spacing: 1px;
@@ -414,20 +345,19 @@ a {
 .footer {
   background-color: #181727;
 }
+
 .footer__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.footer__github {
-}
-
-.github {
+.footer__time {
+  font-family: "Roboto Mono",monospace;
 }
 
 .github__img {
@@ -439,12 +369,6 @@ a {
   margin: 0 0 10px 0;
 }
 
-.footer__rsschool {
-}
-
-.rsschool {
-}
-
 .rsschool__img {
   margin: 0 0 10px 0;
 }
@@ -452,8 +376,4 @@ a {
 .rsschool__link {
   font-family: "Roboto Mono",monospace;
   margin: 0 0 10px 0;
-}
-
-.footer__time {
-  font-family: "Roboto Mono",monospace;
 }
