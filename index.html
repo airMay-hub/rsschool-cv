@@ -3,164 +3,219 @@
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Title -->
+    <title>Maryia Tomkiavichutse - Junior Web Developer</title>
+    <!-- Style connection -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/libs/highlight/styles/base16/3024.min.css">
+    <!-- Favicon connection -->
+    <link rel="shortcut icon" href="favicon_16.png">
+    <link rel="shortcut icon" href="favicon_32.png">
+    <!-- Fonts connection -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    
 </head>
 <body>
   <div class="wrap">
     <div class="main-content-wrap">
-      <header class="header">
-        <div class="content">
-          <div class="header__flex header-flex">
-            <div class="header-flex__item">
-              <h1 class="header__title-1">MARYIA TOMKIAVICHUTSE</h1>
-              <p class="header__subtitle">Front-End Developer (Junior)</p>
-              <div class="header__contacts contacts">
-                <h2 class="contacts__title-2 title-2 ">CONTACTS</h2>
-                  <ul class="contacts__list">
-                    <li class="contacts__item"><address>Minsk, Belarus</address></li>
-                    <li class="contacts__item"><a href="tel:+375336675729">+375(33)667-57-29</a></li>
-                    <li class="contacts__item"><a href="mailto:kiiikaaa.93@mail.ru">kiiikaaa.93@mail.ru</a></li>
-                  </ul>
-              </div>
-                <div class="header__language language">
-                  <h2 class="language__title-2 title-2 ">LANGUAGE</h2>
-                  <ul class="language__list">
-                    <li class="language__item">russian (native)</li>
-                    <li class="language__item">english (a2)</li>
-                  </ul>
-                </div>
-            </div>
-              <div class="header-flex__item">
-                <nav class="header__navigation navigation">
-                  <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
-                    <li class="navigation__item"><a href="#education" class="navigation__link">education</a></li>
-                    <li class="navigation__item"><a href="#experience" class="navigation__link">experience</a></li>
-                    <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
-                  </ul>
-                </nav>
-              </div>
+      <div class="introduction">
+        <header class="header">
+          <div class="content">
+              <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
+                  <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
+                  <li class="navigation__item"><a href="#education" class="navigation__link">education</a></li>
+                  <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a></li>
+                  <li class="navigation__item"><a href="#code" class="navigation__link">code examples</a></li>
+                </ul>
+              </nav>
           </div>
-        </div>
-      </header>
+        </header>
+        <section class="introduction__person">
+          <div class="content">
+            <div class="person__flex">
+              <figure class="person__avatar">
+                <img class="person__img" src="assets/imgs/Avatar.jpg" alt="Personal Photo">
+              </figure>
+              <div class="person__data">
+                <p class="person__name">MARYIA TOMKIAVICHUTSE</p>
+                <h1 class="person__specialization title-1">Web Developer (Junior)</h1>
+                <div class="person__contacts-flex">
+                  <section class="person__contacts contacts">
+                    <h2 class="contacts__title title-2 ">CONTACTS</h2>
+                      <ul class="contacts__list">
+                        <li class="contacts__item">
+                          <img class="contacts__img" src="assets/icons/icons8-коттедж-48.png" alt="">
+                          <address>Minsk, Belarus</address>
+                        </li>
+                        <li class="contacts__item">
+                          <img class="contacts__img" src="assets/icons/icons8-позвоните-мне-48.png" alt="">
+                          <a href="tel:+375336675729">+375(33)667-57-29</a>
+                        </li>
+                        <li class="contacts__item">
+                          <img class="contacts__img" src="assets/icons/icons8-эл.-адрес-48.png" alt="">
+                          <a href="mailto:kiiikaaa.93@mail.ru">kiiikaaa.93@mail.ru</a>
+                        </li>
+                        <li class="contacts__item">
+                          <img class="contacts__img" src="assets/icons/icons8-бумажный-самолетик-48.png" alt="">
+                          <a href="https://t.me/tomkiavichutse">t.me/tomkiavichutse</a>
+                        </li>
+                        <li class="contacts__item">
+                          <img class="contacts__img" src="assets/icons/icons8-линкедин-48.png" alt="">
+                          <a href="https://www.linkedin.com/in/tomkiavichutsemaryia/">in/tomkiavichutsemaryia</a>
+                        </li>
+                      </ul>
+                  </section>
+                  <section class="person__language language">
+                    <h2 class="language__title title-2 ">LANGUAGE</h2>
+                    <ul class="language__list">
+                      <li class="language__item">russian (native)</li>
+                      <li class="language__item">english (a2)</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <main class="main">
           <section class="about" id="about">
             <div class="content">
-              <div class="inner-wrap">
-                <h2 class="about__title-2 title-2 size">/ about me</h2>
-                <p class="about__paragraph">
-                    My name is Maryia Tomkiavichutse. My goal is to develop and grow in the field of Web development. I am passionate about beatiful, high quality and smart product (websites or apps) and I would like to do the same. My strengths is perseverance and responsibility.
-                </p>
-              </div>
+              <h2 class="about__title title-2">/ about me</h2>
+              <p class="about__paragraph">
+                  Hi, I'm Junior Web Developer. My goal is to develop and grow in the field of Information Technology. I am passionate about beatiful, high quality and smart product (websites or apps) and I would like to do the same. I like to get new knowledge and solve tasks. My strengths is perseverance and responsibility. I would like to do an internship in a large company, where I could gain experience and possibly get a full-time job in the future. Of course, I want my activity to benefit the World =)
+              </p>
+            </div>
+          </section>
+          <section class="skills" id="skills">
+            <div class="content">
+              <h2 class="skills__title title-2">/ skills</h2>
+              <ul class="skills__list type-skill">
+                <div class="skills__flex">
+                  <li class="type-skill__item skill-item">[<span class="red">Languages</span>]
+                    <ul class="skill-item__list">
+                      <li class="skill-item__item">HTML5</li>
+                      <li class="skill-item__item">CSS3</li>
+                      <li class="skill-item__item">JS Basic</li>
+                    </ul>
+                  </li>
+                  <li class="type-skill__item skill-item">[<span class="green">Tools</span>]
+                    <ul class="skill-item__list">
+                      <li class="skill-item__item">SCSS</li>
+                      <li class="skill-item__item">Chrome Dev Tools</li>
+                    </ul>
+                  </li>
+                  <li class="type-skill__item skill-item">[<span class="blue">Frameworks</span>]
+                    <ul class="skill-item__list">
+                      <li class="skill-item__item">Bootstrap</li>
+                    </ul>
+                  </li>
+                  <li class="type-skill__item skill-item">[<span class="pink">Versions control system</span>]
+                    <ul class="skill-item__list">
+                      <li class="skill-item__item">Git / GitHub</li>
+                    </ul>
+                  </li>
+                  <li class="type-skill__item skill-item">[<span class="acid">Methodology</span>]
+                    <ul class="skill-item__list">
+                      <li class="skill-item__item">BEM</li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
             </div>
           </section>
           <section class="education" id="education">
             <div class="content">
-              <div class="inner-wrap">
-                <h2 class="education__title-2 title-2 size">/ education</h2>
-                  <ul class="education__list">
-                    <li class="education__item">htmlacademy.ru (online simulators) and self-education, 2019 - 2020</li>
-                    <li class="education__item">RS School JavaScript/Front-end course, 2021 (43,6%)</li>
-                  </ul>
-              </div>
+              <h2 class="education__title title-2">/ education</h2>
+                <ul class="education__list">
+                  <li class="education__item courses">
+                    <p class="courses__item">2021 - now</p>
+                    <p class="courses__item">In progress</p>
+                    <p class="courses__item">JavaScript/Front-end</p>
+                    <p class="courses__item">
+                        <a class="courses__link" href="https://rs.school/">Rolling Scopes School</a>
+                    </p>
+                  </li>
+                  <li class="education__item courses">
+                    <p class="courses__item">2021</p>
+                    <p class="courses__item">
+                        <a class="courses__link" href="https://app.rs.school/certificate/k1eoasrk">Certificate</a>
+                    </p>
+                    <p class="courses__item">JS/FE Pre-School</p>
+                    <p class="courses__item">
+                        <a class="courses__link" href="https://rs.school/">Rolling Scopes School</a>
+                    </p>
+                  </li>
+                  <li class="education__item courses">
+                    <p class="courses__item">2010 - 2015</p>
+                    <p class="courses__item">Bachelor degree</p>
+                    <p class="courses__item">Landscape gardening engineer</p>
+                    <p class="courses__item">Belarusian State Technological University</p>
+                  </li>
+                </ul>
             </div>
           </section>
-          <section class="experience" id="experience">
+          <section class="projects" id="projects">
             <div class="content">
-              <div class="inner-wrap">
-                <h2 class="experience__title-2 title-2 size">/ experience</h2>
-                <p class="experience__paragraph">Code examples:</p>
-                <a href="https://www.codewars.com/users/airMay-hub/completed_solutions" class="experience__link">Codewars</a>
-                <a href="https://github.com/airMay-hub/typical-arrays-problems/commit/19b1c7455b5572eec541d118e532f89c277fd8b3" class="experience__link">Typical arrays problems task</a>
-              </div>
+              <h2 class="projects__title title-2">/ latest projects</h2>
+              <a class="projects__item" href="https://rolling-scopes-school.github.io/airmay-hub-JSFEPRESCHOOL/drum-kit/#">
+                <img class="projects__img" src="assets/imgs/time_machine.jpg" alt="Photo of the project">
+              </a>
+              <a class="projects__item" href="https://rolling-scopes-school.github.io/airmay-hub-JSFEPRESCHOOL/custom-video-player/">
+                <img class="projects__img" src="assets/imgs/custom_video_player.jpg" alt="Photo of the project">
+              </a>
               </div>
           </section>
-            <section class="skills" id="skills">
-              <div class="content">
-                <div class="inner-wrap">
-                  <h2 class="skills__title-2 title-2 size">/ skills</h2>
-                  <div class="skills__languages languages">
-                    <h3 class="languages__title-3 title-3">[Languages]:</h3>
-                    <div class="languages__core-js core-js">
-                      <h4 class="core-js__title-4 title-4">/ Core js</h4>
-                      <ul class="core-js__list">
-                        <li class="core-js__item">Knows that strict mode exists</li>
-                        <li class="core-js__item">Variables, Values, Types (number, string, boolean, object, null, undefined), declaration (var, let, const)</li>
-                        <li class="core-js__item">Expressions (basic of auto type conversions, comparison), Operators, Statements (literals, conditions, loops)</li>
-                        <li class="core-js__item">Objects (create, modify)</li>
-                        <li class="core-js__item">Arrays (create, modify, indexes, length, built-in methods: sorting, filtering, search, iterating)</li>
-                        <li class="core-js__item">Functions (create, invoke, arrow functions)</li>
-                      </ul>
-                    </div>
-                    <div class="languages__html html">
-                      <h4 class="html__title-4 title-4">/ html</h4>
-                      <ul class="html__list">
-                        <li class="html__item">HTML structural and semantic tags (body, headers, lists, links, and etc)</li>
-                        <li class="html__item">Layout tags</li>
-                        <li class="html__item">Text formatting tags: bold, italic</li>
-                        <li class="html__item">HTML tag attributes</li>
-                        <li class="html__item">Styles, Scripts</li>
-                        <li class="html__item">Table, Form, Input Tags</li>
-                      </ul>
-                    </div>
-                    <div class="languages__css css">
-                      <h4 class="css__title-4 title-4">/ css</h4>
-                      <ul class="css__list">
-                        <li class="css__item">Specificity, inheritance, cascade rules, selector attributes</li>
-                        <li class="css__item">Relative and Absolute Units (em, %, px, pt etc.)</li>
-                        <li class="css__item">Standard and box block model</li>
-                        <li class="css__item">Display property</li>
-                        <li class="css__item">Transition, key frames, transformation, rotation, scaling</li>
-                        <li class="css__item">Pseudo-class and pseudo-elements</li>
-                        <li class="css__item">Media Queries (for adaptive layout)</li>
-                        <li class="css__item">Visual effects (Shadows, rounded corners, gradients)</li>
-                        <li class="css__item">Basics of Web Typography (fonts, font-face)</li>
-                        <li class="css__item">Positioning (Document flow, Position properties, Overflow and z-index)</li>
-                        <li class="css__item">Flex layout</li>
-                        <li class="css__item">little knowledge of grid</li>
-                        <li class="css__item">CSS preprocessor SASS/SCSS</li>
-                        <li class="css__item">BEM methodology</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="skills__communication-protocols communication-protocols">
-                    <h3 class="communication-protocols__title-3 title-3">[Communication Protocols]:</h3>
-                    <p class="communication-protocols__paragraph">Basic understanding of HTTP and HTTPS</p>
-                  </div>
-                  <div class="skills__tools tools">
-                    <h3 class="tools__title-3 title-3">[Tools]:</h3>
-                    <ul class="tools__list">
-                      <li class="tools__item">Basic knowledge of browser tools for project needs (<b>Chrome DevTools</b>: Elements, Console, Network, Sources)</li>
-                      <li class="tools__item">Basic understanding of <b>git</b></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
+          <section class="code-example" id="code">
+            <div class="content">
+              <h2 class="code-example__title title-2">/ Code examples</h2>
+              <pre>
+                <code class="javascript">
+function stringify(list) {
+  let str = '';
+  let current = list;
+
+  while(current) {
+    str += current.data + ' -> ';
+    current = current.next;
+  }
+
+  current === null ? str += current : -1;
+  return str;
+}
+                </code>
+              </pre>
+            </div>
+          </section>
       </main>
     </div>
     <footer class="footer">
       <div class="content">
           <div class="footer__flex">
-            <div class="inner-wrap">
-              <div class="footer__github github">
-                <img src="github.svg" width="30" alt="github_icon" class="github__img">
-                <a href="https://github.com/airMay-hub" class="github__link">airMay-hub</a>
-              </div>
-              <div class="footer__rsschool rsschool">
-                <img src="rs_school_js.svg" width="100" alt="rsschool_icon" class="rsschool__img">
-                <a href="https://rs.school/js/" class="rsschool__link">RS School JavaScript/Front-end course</a>
-              </div>
-              <time datetime="2021-03-01" class="footer__time">2021</time>
+            <div class="footer__github github">
+              <a href="https://github.com/airMay-hub" class="github__link">
+                <img src="assets/icons/github.svg" width="30" alt="github_icon" class="github__img">
+              </a>
             </div>
+            <div class="footer__rsschool rsschool">
+              <a href="https://rs.school/js/" class="rsschool__link">
+                <img src="assets/icons/rs_school_js.svg" width="100" alt="rsschool_icon" class="rsschool__img">
+              </a>
+            </div>
+            <time datetime="2021-03-01" class="footer__time">2021</time>
           </div>
         </div>
     </footer>
   </div>
+  <script src="assets/libs/highlight/languages/javascript.min.js"></script>
+  <script src="assets/libs/highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <!-- <a href="https://icons8.com/icon/80350/коттедж">Коттедж icon by Icons8</a> -->
 </body>
 </html>

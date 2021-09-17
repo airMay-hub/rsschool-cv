@@ -1,0 +1,431 @@
+$var1: #bababa;
+$var2: #181727;
+$var3: #1234c4;
+$var4: #000000;
+
+@import 'null_style';
+
+/* контент */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrap {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.main-content-wrap {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: auto;
+}
+
+.content {
+	max-width: 1100px;
+  padding: 0 50px;
+	margin: 0 auto;
+}
+
+a {
+	font-weight: bold;
+}
+
+.introduction {
+	width: 100%;
+	background-color: $var3;
+  border-bottom: 1px solid $var1;
+
+  &__person {
+    padding: 30px 0 70px 0;
+  }
+}
+
+.header {
+	padding: 15px 0;
+
+  &__navigation {}
+}
+
+.navigation {
+
+	&__list {
+    display: flex;
+    justify-content: end;
+	}
+
+	&__item {
+    position: relative;
+		width: 150px;
+		margin: 0 10px;
+    padding: 15px 0;
+
+    &:hover:after {
+      width: 70%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0%;
+      height: 1px;
+      background-color: $var1;
+      transition: all .5s ease-out;
+      -webkit-transition: all .5s ease-out;
+      -moz-transition: all .5s ease-out;
+      -ms-transition: all .5s ease-out;
+      -o-transition: all .5s ease-out;
+    }
+	}
+
+	&__link {
+		text-align: right;
+		text-transform: uppercase;
+		font-family: "Roboto Mono",monospace;
+	}
+}
+
+.person {
+
+  &__flex {
+    padding: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 1062px) {
+      padding: 0;
+      justify-content: space-around;
+    }
+  }
+
+  &__avatar {
+    width: 200px;
+    margin: 0 50px 20px 0;
+    padding: 5px 0 0 0;
+
+    @media(max-width: 1062px) {
+      margin: 0 50px 50px 0;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    border: solid 1px $var1;
+  }
+
+  &__data {}
+
+  &__name {
+    font-size: 30px;
+    font-family: "Michroma",sans-serif;
+    text-transform: uppercase;
+		margin: 0 0 30px 0;
+
+    @media(max-width: 1062px) {
+      text-align: center;
+    }
+  }
+
+  &__specialization {
+		margin: 0 0 50px 0;
+    color: #ffee00;
+
+    @media(max-width: 1062px) {
+      text-align: center;
+    }
+  }
+
+  &__contacts-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+		margin: 0 0 20px 0;
+  }
+
+  &__language {
+    text-align: right;
+  }
+}
+
+.title-1 {
+  font-family: "Roboto Mono",monospace;
+  font-size: 30px;
+}
+
+.contacts {
+
+  &__title {
+		margin: 0 0 20px 0;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+		font-family: "Roboto Mono",monospace;
+    margin: 0 0 5px 0;
+  }
+
+  &__img {
+    width: 30px;
+    margin-right: 20px;
+  }
+}
+
+.title-2 {
+	font-family: "Roboto Mono",monospace;
+	text-transform: uppercase;
+  font-size: 14px;
+}
+
+.language {
+
+  &__title {
+		margin: 0 0 20px 0;
+  }
+
+  &__list {
+  }
+
+  &__item {
+		font-family: "Roboto Mono",monospace;
+		text-transform: uppercase;
+		margin: 0 0 5px 0;
+  }
+}
+
+.main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.about {
+	background-color: $var4;
+	padding: 30px 0 0 0;
+  border-bottom: 1px solid $var1;
+
+	&__title {
+		margin: 0 0 30px 0;
+	}
+  
+	&__paragraph {
+		font-family: "Michroma",sans-serif;
+		font-size: 2.6vw;
+		line-height: 4vw;
+		letter-spacing: 1px;
+		padding-bottom: 50px;
+	}
+}
+
+.skills {
+	background-color: $var2;
+	padding: 30px 0 0 0;
+  border-bottom: 1px solid $var1;
+
+	&__title {
+		margin: 0 0 30px 0;
+	}
+
+	&__list {
+	}
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.type-skill {
+
+  &__item {
+    font-family: "Roboto Mono",monospace;
+		margin: 0 20px 50px 20px;
+  }
+}
+
+.red {
+  color: #8b0000;
+}
+
+.green {
+  color: #129b00;
+}
+
+.blue {
+  color: #006eff;
+}
+
+.pink {
+  color: #ff00d4;
+}
+
+.acid {
+  color: #9fff06;
+}
+
+.skill-item {
+
+  &__list {
+    margin: 15px 0 0 0;
+  }
+
+  &__item {
+    margin: 15px 0 0 35px;
+    list-style-type: square;
+  }
+}
+
+.education {
+	background-color: $var4;
+  padding: 60px 0 20px 0;
+  border-bottom: 1px solid $var1;
+
+	&__title {
+		margin: 0 0 30px 0;
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-family: "Michroma",sans-serif;
+		font-size: 16px;
+		line-height: 30px;
+		padding: 20px 0 20px 0;
+    border-bottom: 1px solid $var1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+	}
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 300px;
+    margin: 0 10px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}
+
+.projects {
+	background-color: $var2;
+  padding: 30px 0;
+  border-bottom: 1px solid $var1;
+
+	&__title {
+	}
+
+  &__item {
+    width: 800px;
+    padding: 60px;
+    margin: 50px auto 100px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $var1;
+  }
+
+  &__img {
+    max-width: 100%;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+	&__paragraph {
+		font-family: "Roboto Mono",monospace;
+		margin: 0 0 10px 0;
+	}
+
+	&__link {
+		font-family: "Michroma",sans-serif;
+		font-size: 2vw;
+		line-height: 3vw;
+		margin: 0 0 10px 0;
+	}
+}
+
+.code-example {
+  background-color: #090300;
+  padding: 30px 0;
+  border-bottom: 1px solid $var1;
+}
+
+.footer {
+	background-color: $var2;
+  padding: 30px 0;
+
+	&__flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+    justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	}
+
+	&__github {
+	}
+
+	&__rsschool {
+	}
+
+	&__time {
+		font-family: "Roboto Mono",monospace;
+	}
+}
+
+.github {
+
+	&__img {
+		margin: 0 10px 10px 0;
+	}
+
+	&__link {
+	}
+}
+
+.rsschool {
+
+	&__img {
+		margin: 0 10px 10px 0;
+	}
+
+	&__link {
+	}
+}
