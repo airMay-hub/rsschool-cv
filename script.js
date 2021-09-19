@@ -3,6 +3,7 @@
 const menuBurger = document.querySelector('.navigation__burger');
 const navigation = document.querySelector('.navigation__body');
 const navigationItems = document.querySelectorAll('.navigation__link');
+const buttonTop = document.querySelector('.button-top');
 
 if (menuBurger) {
   menuBurger.addEventListener("click", function (e) {
@@ -23,3 +24,17 @@ function removeActive(e) {
 }
 
 navigation.addEventListener('click', removeActive);
+
+function toggleButtonTop () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    buttonTop.style.display = "block";
+  } else {
+    buttonTop.style.display = "none";
+  }
+}
+
+window.addEventListener('scroll', toggleButtonTop);
+
+buttonTop.addEventListener('click', () => {
+    window.scroll(top);
+})
