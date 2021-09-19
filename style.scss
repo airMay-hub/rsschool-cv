@@ -2,6 +2,11 @@ $var1: #bababa;
 $var2: #181727;
 $var3: #1234c4;
 $var4: #000000;
+$var5: #8b0000;
+$var6: #129b00;
+$var7: #006eff;
+$var8: #ff00d4;
+$var9: #9fff06;
 
 @import 'null_style';
 
@@ -42,6 +47,10 @@ html {
 	max-width: 1100px;
   padding: 0 50px;
 	margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  }
 }
 
 a {
@@ -55,13 +64,29 @@ a {
 
   &__person {
     padding: 30px 0 70px 0;
+
+    @media (max-width: 767px) {
+      padding: 70px 0 70px 0;
+    }
+
+    @media (max-width: 425px) {
+      padding: 70px 0 50px 0;
+    }
   }
 }
 
 .header {
 	padding: 15px 0;
 
-  &__navigation {}
+  @media (max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: $var3;
+  }
+
+  &__navigation {
+  }
 }
 
 .navigation {
@@ -71,7 +96,7 @@ a {
     display: none;
 
     @media (max-width: 767px) {
-      margin: 13px 0;
+      margin: 13px 15px 13px 0;
       z-index: 5;
       display: block;
       position: absolute;
@@ -135,7 +160,7 @@ a {
       position: fixed;
       top: 0;
       left: -100%;
-      width: 100%;
+      width: 320px;
       height: 100%;
       padding: 70px 30px 30px 30px;
       background-color: rgba(0, 0, 0, 0.9);
@@ -149,6 +174,10 @@ a {
       &_active {
         left: 0;
       }
+    }
+
+    @media (max-width: 425px) {
+      width: 100%;
     }
   }
 
@@ -229,13 +258,21 @@ a {
     padding: 5px 0 0 0;
 
     @media(max-width: 1062px) {
-      margin: 0 50px 50px 0;
+      margin: 0 25px 50px 25px;
+    }
+
+    @media (max-width: 425px) {
+      width: 150px;
     }
   }
 
   &__img {
     width: 200px;
     border: solid 1px $var1;
+
+    @media (max-width: 425px) {
+      width: 150px;
+    }
   }
 
   &__data {}
@@ -248,6 +285,10 @@ a {
 
     @media(max-width: 1062px) {
       text-align: center;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 22px;
     }
   }
 
@@ -263,6 +304,10 @@ a {
   &__contacts-flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
   }
 
   &__contacts {
@@ -348,6 +393,12 @@ a {
 		line-height: 4vw;
 		letter-spacing: 1px;
 		padding-bottom: 50px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+
+    }
 	}
 }
 
@@ -379,23 +430,23 @@ a {
 }
 
 .red {
-  color: #8b0000;
+  color: $var5;
 }
 
 .green {
-  color: #129b00;
+  color: $var6;
 }
 
 .blue {
-  color: #006eff;
+  color: $var7;
 }
 
 .pink {
-  color: #ff00d4;
+  color: $var8;
 }
 
 .acid {
-  color: #9fff06;
+  color: $var9;
 }
 
 .skill-item {
@@ -429,6 +480,10 @@ a {
 		padding: 20px 0 20px 0;
     border-bottom: 1px solid $var1;
 
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+
     &:last-child {
       border-bottom: none;
     }
@@ -438,9 +493,11 @@ a {
 .courses {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  
 
   &__item {
-    width: 300px;
+    width: 230px;
     margin: 0 10px;
   }
 
@@ -454,34 +511,88 @@ a {
   padding: 30px 0;
   border-bottom: 1px solid $var1;
 
-	&__title {
-	}
+  &__flex {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &__item {
-    width: 800px;
-    padding: 60px;
-    margin: 50px auto 100px auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $var1;
+    margin: 30px 0;
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    width: 300px;
   }
 
   &__img {
-    max-width: 100%;
-    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
-    filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
+    width: 300px;
+    border: 1px solid $var1;
+    transition: all 0.3s ease 0s;
+
+    @media (max-width: 767px) {
+      margin: 0 0 20px 0;
+    }
+    
+
+    &:hover {
+      box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
+      transform: translate(-5px, -5px);
+      -webkit-transform: translate(-5px, -5px);
+      -moz-transform: translate(-5px, -5px);
+      -ms-transform: translate(-5px, -5px);
+      -o-transform: translate(-5px, -5px);
+    }
+  }
+
+  &__content {
+    margin: 0 0 0 25px;
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+  }
+
+  &__desc {
+    margin: 0 0 10px 0;
+    font-family: "Roboto Mono",monospace;
+    font-size: 14px;
+  }
+
+  &__call {
+    font-family: "Roboto Mono",monospace;
+    color: $var9;
+  }
 }
 
-	&__paragraph {
-		font-family: "Roboto Mono",monospace;
-		margin: 0 0 10px 0;
-	}
+.subtitle {
+  font-family: "Roboto Mono",monospace;
+  font-size: 16px;
+  color: $var8;
+}
 
-	&__link {
-		font-family: "Michroma",sans-serif;
-		font-size: 2vw;
-		line-height: 3vw;
-		margin: 0 0 10px 0;
-	}
+.title-3 {
+  font-family: "Michroma",sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .code-example {
@@ -489,6 +600,39 @@ a {
   padding: 30px 0;
   border-bottom: 1px solid $var1;
 }
+
+.button-top {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background-color: transparent;
+  transition: transform 0.3s ease 0s;
+
+  @media (max-width: 425px) {
+    bottom: 30px;
+  }
+
+  &:hover {
+    transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, -5px);
+    -moz-transform: translate(-5px, -5px);
+    -ms-transform: translate(-5px, -5px);
+    -o-transform: translate(-5px, -5px);
+  }
+}
+
+.top-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  color: $var1;
+  font-family: "Roboto Mono",monospace;
+}
+
 
 .footer {
   background-color: $var2;
