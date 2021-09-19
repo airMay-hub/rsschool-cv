@@ -387,45 +387,46 @@ a {
 }
 
 .footer {
-	background-color: $var2;
+  background-color: $var2;
   padding: 30px 0;
 
-	&__flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+  &__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     justify-content: space-between;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-	}
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
 
-	&__github {
-	}
+  &__github {
+  }
 
-	&__rsschool {
-	}
+  &__rsschool {
+  }
 
-	&__time {
-		font-family: "Roboto Mono",monospace;
-	}
+  &__time {
+    font-family: "Roboto Mono",monospace;
+  }
 }
 
 .github {
 
-	&__img {
-		margin: 0 10px 10px 0;
-	}
+  &__img {
+    margin: 0 10px 10px 0;
+  }
 
-	&__link {
-	}
+  &__link {
+  }
 }
 
 .rsschool {
 
-	&__img {
-		margin: 0 10px 10px 0;
-	}
+  &__img {
+    margin: 0 10px 10px 0;
+  }
 
-	&__link {
-	}
+  &__link {
+  }
 }
+
