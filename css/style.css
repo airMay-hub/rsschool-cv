@@ -127,18 +127,27 @@ a {
 
 @media (max-width: 767px) {
   .introduction__person {
-    padding: 50px 0 70px 0;
+    padding: 70px 0 70px 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .introduction__person {
-    padding: 50px 0 50px 0;
+    padding: 70px 0 50px 0;
   }
 }
 
 .header {
   padding: 15px 0;
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #1234c4;
+  }
 }
 
 .navigation {
