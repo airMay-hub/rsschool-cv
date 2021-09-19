@@ -530,34 +530,70 @@ a {
   background-color: #181727;
   padding: 30px 0;
   border-bottom: 1px solid #bababa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects__item {
-  width: 800px;
-  padding: 60px;
-  margin: 50px auto 100px auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), #bababa;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #bababa;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects__img {
-  max-width: 100%;
+  max-width: 400px;
+  border: 1px solid #bababa;
   -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
-  filter: brightness(0.6);
-  -webkit-filter: brightness(0.6);
 }
 
-.projects__paragraph {
+.projects__content {
+  margin: 0 0 0 30px;
+  padding: 10px;
+  max-width: 495px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__subtitle {
+  margin: 0 0 10px 0;
+}
+
+.projects__title {
+  margin: 0 0 10px 0;
+}
+
+.projects__desc {
+  margin: 0 0 10px 0;
   font-family: "Roboto Mono",monospace;
-  margin: 0 0 10px 0;
+  font-size: 18px;
 }
 
-.projects__link {
+.projects__call {
+  font-family: "Roboto Mono",monospace;
+  color: #9fff06;
+}
+
+.subtitle {
+  font-family: "Roboto Mono",monospace;
+  font-size: 24px;
+  color: #ff00d4;
+}
+
+.title-3 {
   font-family: "Michroma",sans-serif;
-  font-size: 2vw;
-  line-height: 3vw;
-  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .code-example {

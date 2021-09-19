@@ -2,6 +2,11 @@ $var1: #bababa;
 $var2: #181727;
 $var3: #1234c4;
 $var4: #000000;
+$var5: #8b0000;
+$var6: #129b00;
+$var7: #006eff;
+$var8: #ff00d4;
+$var9: #9fff06;
 
 @import 'null_style';
 
@@ -379,23 +384,23 @@ a {
 }
 
 .red {
-  color: #8b0000;
+  color: $var5;
 }
 
 .green {
-  color: #129b00;
+  color: $var6;
 }
 
 .blue {
-  color: #006eff;
+  color: $var7;
 }
 
 .pink {
-  color: #ff00d4;
+  color: $var8;
 }
 
 .acid {
-  color: #9fff06;
+  color: $var9;
 }
 
 .skill-item {
@@ -453,35 +458,62 @@ a {
 	background-color: $var2;
   padding: 30px 0;
   border-bottom: 1px solid $var1;
-
-	&__title {
-	}
+    display: flex;
 
   &__item {
-    width: 800px;
-    padding: 60px;
-    margin: 50px auto 100px auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $var1;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
   }
 
   &__img {
-    max-width: 100%;
+    max-width: 400px;
+    border: 1px solid $var1;
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.5);
-    filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
 }
 
-	&__paragraph {
-		font-family: "Roboto Mono",monospace;
-		margin: 0 0 10px 0;
-	}
+  &__content {
+    margin: 0 0 0 30px;
+    padding: 10px;
+    max-width: 495px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-	&__link {
-		font-family: "Michroma",sans-serif;
-		font-size: 2vw;
-		line-height: 3vw;
-		margin: 0 0 10px 0;
-	}
+  &__subtitle {
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+  }
+
+  &__desc {
+    margin: 0 0 10px 0;
+    font-family: "Roboto Mono",monospace;
+    font-size: 18px;
+  }
+
+  &__call {
+    font-family: "Roboto Mono",monospace;
+    color: $var9;
+  }
+}
+
+.subtitle {
+  font-family: "Roboto Mono",monospace;
+  font-size: 24px;
+  color: $var8;
+}
+
+.title-3 {
+  font-family: "Michroma",sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .code-example {
