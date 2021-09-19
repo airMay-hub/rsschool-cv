@@ -482,6 +482,13 @@ a {
   padding-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .about__paragraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .skills {
   background-color: #181727;
   padding: 30px 0 0 0;
