@@ -454,7 +454,7 @@ a {
   padding: 30px 0;
 }
 
-.footer__flex {
+.footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,16 +463,48 @@ a {
           justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer__time {
+@media (max-width: 515px) {
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer-flex__item {
+  margin: 0 30px 0 0;
   font-family: "Roboto Mono",monospace;
+  text-transform: uppercase;
 }
 
-.github__img {
-  margin: 0 10px 10px 0;
+@media (max-width: 507px) {
+  .footer-flex__item:first-child {
+    margin: 0 90px 0 0;
+  }
 }
 
-.rsschool__img {
-  margin: 0 10px 10px 0;
+@media (max-width: 507px) {
+  .footer-flex__item:nth-child(2) {
+    margin: 0;
+  }
+}
+
+.footer-flex__item:last-child {
+  margin: 0;
+  font-size: 11px;
+}
+
+@media (max-width: 507px) {
+  .footer-flex__item:last-child {
+    margin: 40px 0 0 0;
+    text-align: center;
+    line-height: 25px;
+  }
 }
