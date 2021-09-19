@@ -65,10 +65,100 @@ a {
 }
 
 .navigation {
+  position: relative;
+
+  &__burger {
+    display: none;
+
+    @media (max-width: 767px) {
+      margin: 13px 0;
+      z-index: 5;
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+      right: 0;
+
+        &::before {
+          content: "";
+          left: 0;
+          position: absolute;
+          height: 10%;
+          width: 100%;
+          transition: all 0.3s ease 0s;
+          background-color: $var1;
+          top: 0;
+        }
+
+        &::after {
+          content: "";
+          left: 0;
+          position: absolute;
+          height: 10%;
+          width: 100%;
+          transition: all 0.3s ease 0s;
+          background-color: $var1;
+          bottom: 0;
+        }
+
+        & span {
+          left: 0;
+          position: absolute;
+          height: 10%;
+          width: 100%;
+          transition: all 0.3s ease 0s;
+          background-color: $var1;
+          top: 50%;
+          transform: scale(1) translate(0px, -50%);
+      }
+
+      &_active span {
+        transform: scale(0) translate(0px, -50%);
+      }
+
+      &_active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+      }
+
+      &_active::after {
+        top: 50%;
+        transform: rotate(45deg) translate(0px, -50%);
+      }
+    }
+  }
+
+  &__body {
+
+    @media (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      padding: 70px 30px 30px 30px;
+      background-color: rgba(0, 0, 0, 0.9);
+      transition: left 0.3s ease 0s;
+      -webkit-transition: left 0.3s ease 0s;
+      -moz-transition: left 0.3s ease 0s;
+      -ms-transition: left 0.3s ease 0s;
+      -o-transition: left 0.3s ease 0s;
+      overflow: auto;
+  
+      &_active {
+        left: 0;
+      }
+    }
+  }
 
 	&__list {
     display: flex;
     justify-content: end;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+}
 	}
 
 	&__item {
@@ -95,13 +185,27 @@ a {
       -ms-transition: all .5s ease-out;
       -o-transition: all .5s ease-out;
     }
+
+    @media (max-width: 767px) {
+      padding: 30px 0;
+      width: 100%;
+    }
 	}
 
 	&__link {
 		text-align: right;
 		text-transform: uppercase;
 		font-family: "Roboto Mono",monospace;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+      text-align: center;
+    }
 	}
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .person {
@@ -387,45 +491,61 @@ a {
 }
 
 .footer {
-	background-color: $var2;
+  background-color: $var2;
   padding: 30px 0;
 
-	&__flex {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+  &__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     justify-content: space-between;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-	}
-
-	&__github {
-	}
-
-	&__rsschool {
-	}
-
-	&__time {
-		font-family: "Roboto Mono",monospace;
-	}
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    @media (max-width: 515px) {
+      justify-content: center;;
+    }
+  }
 }
 
-.github {
+.footer-flex {
 
-	&__img {
-		margin: 0 10px 10px 0;
-	}
+  &__item {
+    margin: 0 30px 0 0;
+    font-family: "Roboto Mono",monospace;
+    text-transform: uppercase;
 
-	&__link {
-	}
+    &:first-child {
+
+      @media (max-width: 507px) {
+        margin: 0 90px 0 0;
+      }
+    }
+
+    &:nth-child(2) {
+
+      @media (max-width: 507px) {
+        margin: 0;
+      }
+      
+    }
+
+    &:last-child {
+      margin: 0;
+      font-size: 11px;
+
+      @media (max-width: 507px) {
+        margin: 40px 0 0 0;
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &__link {}
+
+  &__img {}
 }
 
-.rsschool {
-
-	&__img {
-		margin: 0 10px 10px 0;
-	}
-
-	&__link {
-	}
-}
