@@ -16,6 +16,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(45deg, $var8, $var7, $var6, $var9);
+  // background: url(../assets/imgs/video_games_humo.jpg);
+  background-attachment: fixed;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+
 .wrap {
 	width: 100%;
 	min-height: 100%;
@@ -424,8 +433,8 @@ a {
   }
 
   &:hover {
-    background-color: $var5;
-    box-shadow: 0 0 10px 5px $var5;
+    background-color: #ffee00;
+    box-shadow: 0 0 10px 5px #ffee00;
   }
 }
 
@@ -467,9 +476,9 @@ a {
 }
 
 .about {
-	background-color: $var4;
 	padding: 30px 0 0 0;
   border-bottom: 1px solid $var1;
+	background-color: $var4;
 
 	&__title {
 		margin: 0 0 30px 0;
@@ -505,9 +514,11 @@ a {
 }
 
 .skills {
-	background-color: $var2;
+  margin: 60px 0;
 	padding: 30px 0 0 0;
+  border-top: 1px solid $var1;
   border-bottom: 1px solid $var1;
+	background-color: $var2;
 
 	&__title {
 		margin: 0 0 30px 0;
@@ -566,6 +577,7 @@ a {
 .education {
 	background-color: $var4;
   padding: 60px 0 20px 0;
+  border-top: 1px solid $var1;
   border-bottom: 1px solid $var1;
 
 	&__title {
@@ -703,9 +715,11 @@ a {
 }
 
 .code-example {
-  background-color: #090300;
+  margin: 60px 0;
   padding: 30px 0;
+  border-top: 1px solid $var1;
   border-bottom: 1px solid $var1;
+  background-color: #090300;
 }
 
 .button-top {
@@ -742,6 +756,7 @@ a {
 
 
 .footer {
+  border-top: 1px solid $var1;
   background-color: $var2;
   padding: 30px 0;
 

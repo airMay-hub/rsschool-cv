@@ -41,7 +41,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #181727;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 100%;
   line-height: 1;
@@ -70,6 +69,11 @@ ul, li {
 /* контент */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(45deg, #ff00d4, #006eff, #129b00, #9fff06);
+  background-attachment: fixed;
 }
 
 .wrap {
@@ -540,9 +544,9 @@ a {
 }
 
 .github-button:hover {
-  background-color: #8b0000;
-  -webkit-box-shadow: 0 0 10px 5px #8b0000;
-          box-shadow: 0 0 10px 5px #8b0000;
+  background-color: #ffee00;
+  -webkit-box-shadow: 0 0 10px 5px #ffee00;
+          box-shadow: 0 0 10px 5px #ffee00;
 }
 
 @-webkit-keyframes circulate {
@@ -612,9 +616,9 @@ a {
 }
 
 .about {
-  background-color: #000000;
   padding: 30px 0 0 0;
   border-bottom: 1px solid #bababa;
+  background-color: #000000;
 }
 
 .about__title {
@@ -654,9 +658,11 @@ a {
 }
 
 .skills {
-  background-color: #181727;
+  margin: 60px 0;
   padding: 30px 0 0 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
+  background-color: #181727;
 }
 
 .skills__title {
@@ -711,6 +717,7 @@ a {
 .education {
   background-color: #000000;
   padding: 60px 0 20px 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
 }
 
@@ -873,9 +880,11 @@ a {
 }
 
 .code-example {
-  background-color: #090300;
+  margin: 60px 0;
   padding: 30px 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
+  background-color: #090300;
 }
 
 .button-top {
@@ -921,6 +930,7 @@ a {
 }
 
 .footer {
+  border-top: 1px solid #bababa;
   background-color: #181727;
   padding: 30px 0;
 }
