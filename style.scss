@@ -192,12 +192,26 @@ a {
 
 	&__item {
     position: relative;
-		width: 150px;
+		width: 140px;
 		margin: 0 10px;
-    padding: 15px 0;
+    padding: 10px 0;
+
+    &:first-child {
+      padding: 0;
+      margin: auto 0;
+
+      @media (max-width: 767px) {
+        margin: 0 10px;
+        padding: 5px 0;
+      }
+    }
 
     &:hover:after {
       width: 70%;
+    }
+
+    &:first-child:hover:after {
+      width: 0;
     }
 
     &::after {
@@ -232,6 +246,30 @@ a {
     }
 	}
 }
+
+.choose-color {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+
+    @media (max-width: 767px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__label {
+    text-align: center;
+		text-transform: uppercase;
+		font-family: "Roboto Mono",monospace;
+  }
+}
+
 
 .lock {
   overflow: hidden;
