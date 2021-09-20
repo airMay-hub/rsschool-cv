@@ -7,6 +7,7 @@ const buttonTop = document.querySelector('.button-top');
 const chooseColor = document.querySelector('.choose-color__input');
 const introduction = document.querySelector('.introduction');
 const header = document.querySelector('.header');
+const body = document.querySelector('body');
 
 // Меню бургер
 
@@ -61,6 +62,10 @@ buttonTop.addEventListener('click', () => {
 // Выбор цвета
 
 chooseColor.addEventListener('input', (e) => {
-  introduction.style.background = e.target.value;
-  header.style.background = e.target.value;
+  let color = e.target.value;
+  introduction.style.background = `linear-gradient(-45deg, #000000, #181727, ${color})`;
+  body.style.background = `linear-gradient(90deg, #000000, #181727, ${color})`;
+  if (window.innerWidth < 768) {
+  header.style.background = `linear-gradient(-45deg, #181727, ${color})`;
+}
 });

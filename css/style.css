@@ -72,7 +72,8 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, #ff00d4, #006eff, #129b00, #9fff06);
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#181727), to(#1234c4));
+  background: linear-gradient(90deg, #000000, #181727, #1234c4);
   background-attachment: fixed;
 }
 
@@ -121,7 +122,7 @@ a {
 
 .introduction {
   width: 100%;
-  background-color: #1234c4;
+  background: linear-gradient(-45deg, #000000, #181727, #1234c4);
   border-bottom: 1px solid #bababa;
 }
 
@@ -131,7 +132,7 @@ a {
 
 @media (max-width: 767px) {
   .introduction__person {
-    padding: 70px 0 70px 0;
+    padding: 90px 0 70px 0;
   }
 }
 
@@ -151,7 +152,7 @@ a {
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color: #1234c4;
+    background: linear-gradient(-45deg, #181727, #1234c4);
   }
 }
 
@@ -769,9 +770,10 @@ a {
 }
 
 .projects {
-  background-color: #181727;
+  margin: 60px 0 0 0;
   padding: 30px 0;
-  border-bottom: 1px solid #bababa;
+  border-top: 1px solid #bababa;
+  background-color: #181727;
 }
 
 .projects__flex {
@@ -880,7 +882,6 @@ a {
 }
 
 .code-example {
-  margin: 60px 0;
   padding: 30px 0;
   border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
@@ -930,7 +931,6 @@ a {
 }
 
 .footer {
-  border-top: 1px solid #bababa;
   background-color: #181727;
   padding: 30px 0;
 }
