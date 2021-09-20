@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
     <title>Maryia Tomkiavichutse - Junior Web Developer</title>
     <!-- Style connection -->
@@ -25,20 +25,27 @@
       <div class="introduction">
         <header class="header">
           <div class="content">
-              <div class="header__navigation navigation">
-                <div class="navigation__burger">
-                  <span></span>
-                </div>
-                <nav class="navigation__body">
-                  <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
-                    <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
-                    <li class="navigation__item"><a href="#education" class="navigation__link">education</a></li>
-                    <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a></li>
-                    <li class="navigation__item"><a href="#code" class="navigation__link">code examples</a></li>
-                  </ul>
-                </nav>
+            <div class="header__navigation navigation">
+              <div class="navigation__burger">
+                <span></span>
               </div>
+              <nav class="navigation__body">
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <div class="choose-color">
+                      <input class="choose-color__input" type="color" id="introduction" name="introduction" value="#1234c4">
+                      <label class="choose-color__label" for="introduction">Choose color</label>
+                    </div>
+                  </li>
+                  <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
+                  <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
+                  <li class="navigation__item"><a href="#education" class="navigation__link">education</a></li>
+                  <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a></li>
+                  <li class="navigation__item"><a href="#code" class="navigation__link">code</a></li>
+                  
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
         <section class="introduction__person">
@@ -52,7 +59,7 @@
                 <h1 class="person__specialization title-1">Web Developer (Junior)</h1>
                 <div class="person__contacts-flex">
                   <section class="person__contacts contacts">
-                    <h2 class="contacts__title title-2 ">CONTACTS</h2>
+                    <h4 class="contacts__title title-2 ">CONTACTS</h4>
                       <ul class="contacts__list">
                         <li class="contacts__item">
                           <img class="contacts__img" src="assets/icons/icons8-коттедж-48.png" alt="">
@@ -72,16 +79,19 @@
                         </li>
                         <li class="contacts__item">
                           <img class="contacts__img" src="assets/icons/icons8-линкедин-48.png" alt="">
-                          <a href="https://www.linkedin.com/in/tomkiavichutsemaryia/">in/tomkiavichutsemaryia</a>
+                          <a href="https://www.linkedin.com/in/tomkiavichutsemaryia/" target="blank">in/tomkiavichutsemaryia</a>
                         </li>
                       </ul>
                   </section>
                   <section class="person__language language">
-                    <h2 class="language__title title-2 ">LANGUAGE</h2>
+                    <h4 class="language__title title-2 ">LANGUAGE</h4>
                     <ul class="language__list">
                       <li class="language__item">russian (native)</li>
                       <li class="language__item">english (a2)</li>
                     </ul>
+                    <a class="github-button" href="https://github.com/airMay-hub" target="blank">
+                      <img src="assets/icons/icons8-github-48.png" alt="">
+                    </a>
                   </section>
                 </div>
               </div>
@@ -101,37 +111,40 @@
         <section class="skills" id="skills">
           <div class="content">
             <h2 class="skills__title title-2">/ skills</h2>
-            <ul class="skills__list type-skill">
-              <div class="skills__flex">
-                <li class="type-skill__item skill-item">[<span class="red">Languages</span>]
-                  <ul class="skill-item__list">
-                    <li class="skill-item__item">HTML5</li>
-                    <li class="skill-item__item">CSS3</li>
-                    <li class="skill-item__item">JS Basic</li>
-                  </ul>
-                </li>
-                <li class="type-skill__item skill-item">[<span class="green">Tools</span>]
-                  <ul class="skill-item__list">
-                    <li class="skill-item__item">SCSS</li>
-                    <li class="skill-item__item">Chrome Dev Tools</li>
-                  </ul>
-                </li>
-                <li class="type-skill__item skill-item">[<span class="blue">Frameworks</span>]
-                  <ul class="skill-item__list">
-                    <li class="skill-item__item">Bootstrap</li>
-                  </ul>
-                </li>
-                <li class="type-skill__item skill-item">[<span class="pink">Versions control system</span>]
-                  <ul class="skill-item__list">
-                    <li class="skill-item__item">Git / GitHub</li>
-                  </ul>
-                </li>
-                <li class="type-skill__item skill-item">[<span class="acid">Methodology</span>]
-                  <ul class="skill-item__list">
-                    <li class="skill-item__item">BEM</li>
-                  </ul>
-                </li>
-              </div>
+            <ul class="skills__list type-skill skills__flex">
+              <li class="type-skill__item skill-item">
+                <h3>[<span class="red">Languages</span>]</h3>
+                <ul class="skill-item__list">
+                  <li class="skill-item__item">HTML5</li>
+                  <li class="skill-item__item">CSS3</li>
+                  <li class="skill-item__item">JS Basic</li>
+                </ul>
+              </li>
+              <li class="type-skill__item skill-item">
+                <h3>[<span class="green">Tools</span>]</h3>
+                <ul class="skill-item__list">
+                  <li class="skill-item__item">SCSS</li>
+                  <li class="skill-item__item">Chrome Dev Tools</li>
+                </ul>
+              </li>
+              <li class="type-skill__item skill-item">
+                <h3>[<span class="blue">Frameworks</span>]</h3>
+                <ul class="skill-item__list">
+                  <li class="skill-item__item">Bootstrap</li>
+                </ul>
+              </li>
+              <li class="type-skill__item skill-item">
+                <h3>[<span class="pink">Versions control system</span>]</h3>
+                <ul class="skill-item__list">
+                  <li class="skill-item__item">Git / GitHub</li>
+                </ul>
+              </li>
+              <li class="type-skill__item skill-item">
+                <h3>[<span class="acid">Methodology</span>]</h3>
+                <ul class="skill-item__list">
+                  <li class="skill-item__item">BEM</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </section>
@@ -144,17 +157,17 @@
                   <p class="courses__item">In progress</p>
                   <p class="courses__item">JavaScript/Front-end</p>
                   <p class="courses__item">
-                      <a class="courses__link" href="https://rs.school/">Rolling Scopes School</a>
+                      <a class="courses__link" href="https://rs.school/" target="blank">Rolling Scopes School</a>
                   </p>
                 </li>
                 <li class="education__item courses">
                   <p class="courses__item">2021</p>
                   <p class="courses__item">
-                      <a class="courses__link" href="https://app.rs.school/certificate/k1eoasrk">Certificate</a>
+                      <a class="courses__link" href="https://app.rs.school/certificate/k1eoasrk" target="blank">Certificate</a>
                   </p>
                   <p class="courses__item">JS/FE Pre-School</p>
                   <p class="courses__item">
-                      <a class="courses__link" href="https://rs.school/">Rolling Scopes School</a>
+                      <a class="courses__link" href="https://rs.school/" target="blank">Rolling Scopes School</a>
                   </p>
                 </li>
                 <li class="education__item courses">
@@ -176,7 +189,7 @@
                 </a>
                 <div class="projects__content">
                   <p class="projects__subtitle subtitle">html css (scss bootstrap) js</p>
-                  <h3 class="projects__title title-3">Drum Kit</h3>
+                  <h5 class="projects__title title-3">Drum Kit</h5>
                   <p class="projects__desc">
                     "A music application in which you can play sounds by keyboard and button. Each key has its own sound. You can also choose an application theme that corresponds to a specific historical era."
                   </p>
@@ -189,7 +202,7 @@
                 </a>
                 <div class="projects__content">
                   <p class="projects__subtitle subtitle">html css (scss) js</p>
-                  <h3 class="projects__title title-3">Custom video player</h3>
+                  <h5 class="projects__title title-3">Custom video player</h5>
                   <p class="projects__desc">
                     "Video player with custom design and 
                     required functionality: managing volume, playback rate, fullscreen mode, rewind back / forward with buttons and keyboard."
@@ -222,23 +235,21 @@ return str;
           </div>
         </section>
       </main>
-      <button class="button-top" type="button">
-        <div class="top-flex">
-          <img class="top-img" src="assets/icons/icons8-winged-heart-48.png" alt="">
-          <p class="top">top</p>
-        </div>
+      <button class="button-top top-flex" type="button">
+        <img class="top-img" src="assets/icons/icons8-winged-heart-48.png" alt="">
+        <span class="top">top</span>
       </button>
     </div>
     <footer class="footer">
       <div class="content">
           <div class="footer__inner footer-flex">
             <div class="footer-flex__item">
-              <a href="https://rs.school/js/" class="footer-flex__link">
+              <a href="https://rs.school/js/" class="footer-flex__link" target="blank">
                 <img src="assets/icons/rs_school_js.svg" width="100" alt="RSSchool Icon" class="footer-flex__img">
               </a>
             </div>
             <div class="footer-flex__item">
-              <a href="https://github.com/airMay-hub" class="footer-flex__link">
+              <a href="https://github.com/airMay-hub" class="footer-flex__link" target="blank">
                 <img src="assets/icons/github.svg" width="30" alt="GitHub Icon" class="footer-flex__img">
               </a>
             </div>
@@ -254,6 +265,6 @@ return str;
   <script src="assets/libs/highlight/languages/javascript.min.js"></script>
   <script src="assets/libs/highlight/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-  <!-- <a href="https://icons8.com/icon/80350/коттедж">Коттедж icon by Icons8</a> -->
+  <!-- <a href="https://icons8.com" target="blank">Icons by Icons8</a> -->
 </body>
 </html>

@@ -41,7 +41,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #181727;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 100%;
   line-height: 1;
@@ -70,6 +69,12 @@ ul, li {
 /* контент */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#181727), to(#1234c4));
+  background: linear-gradient(90deg, #000000, #181727, #1234c4);
+  background-attachment: fixed;
 }
 
 .wrap {
@@ -117,7 +122,7 @@ a {
 
 .introduction {
   width: 100%;
-  background-color: #1234c4;
+  background: linear-gradient(-45deg, #000000, #181727, #1234c4);
   border-bottom: 1px solid #bababa;
 }
 
@@ -127,7 +132,7 @@ a {
 
 @media (max-width: 767px) {
   .introduction__person {
-    padding: 70px 0 70px 0;
+    padding: 90px 0 70px 0;
   }
 }
 
@@ -139,6 +144,7 @@ a {
 
 .header {
   padding: 15px 0;
+  z-index: 99;
 }
 
 @media (max-width: 767px) {
@@ -146,7 +152,7 @@ a {
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color: #1234c4;
+    background: linear-gradient(-45deg, #181727, #1234c4);
   }
 }
 
@@ -266,13 +272,29 @@ a {
 
 .navigation__item {
   position: relative;
-  width: 150px;
+  width: 140px;
   margin: 0 10px;
-  padding: 15px 0;
+  padding: 10px 0;
+}
+
+.navigation__item:first-child {
+  padding: 0;
+  margin: auto 0;
+}
+
+@media (max-width: 767px) {
+  .navigation__item:first-child {
+    margin: 0 10px;
+    padding: 5px 0;
+  }
 }
 
 .navigation__item:hover:after {
   width: 70%;
+}
+
+.navigation__item:first-child:hover:after {
+  width: 0;
 }
 
 .navigation__item::after {
@@ -308,6 +330,45 @@ a {
     font-size: 22px;
     text-align: center;
   }
+}
+
+.choose-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .choose-color {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.choose-color__input {
+  padding: 0 2px;
+  background-color: #ffee00;
+}
+
+@media (max-width: 767px) {
+  .choose-color__input {
+    margin: 0 0 10px 0;
+  }
+}
+
+.choose-color__label {
+  color: #ffee00;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Mono",monospace;
 }
 
 .lock {
@@ -453,6 +514,10 @@ a {
   font-size: 14px;
 }
 
+.language {
+  position: relative;
+}
+
 .language__title {
   margin: 0 0 20px 0;
 }
@@ -461,6 +526,84 @@ a {
   font-family: "Roboto Mono",monospace;
   text-transform: uppercase;
   margin: 0 0 5px 0;
+}
+
+.github-button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  animation: circulate 2s linear infinite;
+  -webkit-animation: circulate 2s linear infinite;
+}
+
+@media (max-width: 425px) {
+  .github-button {
+    bottom: 5px;
+    right: calc(100% - 80px);
+  }
+}
+
+.github-button:hover {
+  background-color: #ffee00;
+  -webkit-box-shadow: 0 0 10px 5px #ffee00;
+          box-shadow: 0 0 10px 5px #ffee00;
+}
+
+@-webkit-keyframes circulate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20%, 20%);
+    -webkit-transform: translate(-20%, 20%);
+    -moz-transform: translate(-20%, 20%);
+    -ms-transform: translate(-20%, 20%);
+    -o-transform: translate(-20%, 20%);
+  }
+  50% {
+    transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, 40%);
+    -moz-transform: translate(0%, 40%);
+    -ms-transform: translate(0%, 40%);
+    -o-transform: translate(0%, 40%);
+  }
+  75% {
+    transform: translate(20%, 20%);
+    -webkit-transform: translate(20%, 20%);
+    -moz-transform: translate(20%, 20%);
+    -ms-transform: translate(20%, 20%);
+    -o-transform: translate(20%, 20%);
+  }
+}
+
+@keyframes circulate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20%, 20%);
+    -webkit-transform: translate(-20%, 20%);
+    -moz-transform: translate(-20%, 20%);
+    -ms-transform: translate(-20%, 20%);
+    -o-transform: translate(-20%, 20%);
+  }
+  50% {
+    transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, 40%);
+    -moz-transform: translate(0%, 40%);
+    -ms-transform: translate(0%, 40%);
+    -o-transform: translate(0%, 40%);
+  }
+  75% {
+    transform: translate(20%, 20%);
+    -webkit-transform: translate(20%, 20%);
+    -moz-transform: translate(20%, 20%);
+    -ms-transform: translate(20%, 20%);
+    -o-transform: translate(20%, 20%);
+  }
 }
 
 .main {
@@ -474,9 +617,9 @@ a {
 }
 
 .about {
-  background-color: #000000;
   padding: 30px 0 0 0;
   border-bottom: 1px solid #bababa;
+  background-color: #000000;
 }
 
 .about__title {
@@ -491,6 +634,13 @@ a {
   padding-bottom: 50px;
 }
 
+@media (min-width: 1441px) {
+  .about__paragraph {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
 @media (max-width: 767px) {
   .about__paragraph {
     font-size: 20px;
@@ -498,10 +648,22 @@ a {
   }
 }
 
+.block-shadow {
+  -webkit-box-shadow: -3px -3px #ff00d4, 3px 3px #006eff;
+          box-shadow: -3px -3px #ff00d4, 3px 3px #006eff;
+}
+
+.shadow {
+  color: #ffffff;
+  text-shadow: -3px 0 #ff00d4, 3px 0 #006eff;
+}
+
 .skills {
-  background-color: #181727;
+  margin: 60px 0;
   padding: 30px 0 0 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
+  background-color: #181727;
 }
 
 .skills__title {
@@ -556,6 +718,7 @@ a {
 .education {
   background-color: #000000;
   padding: 60px 0 20px 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
 }
 
@@ -597,14 +760,20 @@ a {
   margin: 0 10px;
 }
 
+.courses__item:first-child {
+  font-size: 20px;
+  color: #9fff06;
+}
+
 .courses__link {
   text-decoration: underline;
 }
 
 .projects {
-  background-color: #181727;
+  margin: 60px 0 0 0;
   padding: 30px 0;
-  border-bottom: 1px solid #bababa;
+  border-top: 1px solid #bababa;
+  background-color: #181727;
 }
 
 .projects__flex {
@@ -713,9 +882,10 @@ a {
 }
 
 .code-example {
-  background-color: #090300;
   padding: 30px 0;
+  border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
+  background-color: #090300;
 }
 
 .button-top {
