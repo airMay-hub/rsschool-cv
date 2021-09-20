@@ -527,10 +527,7 @@ a {
   position: absolute;
   bottom: 50px;
   right: 50px;
-  background-color: #bababa;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px 5px #bababa;
-          box-shadow: 0 0 10px 5px #bababa;
   animation: circulate 2s linear infinite;
   -webkit-animation: circulate 2s linear infinite;
 }
@@ -646,6 +643,16 @@ a {
   }
 }
 
+.block-shadow {
+  -webkit-box-shadow: -3px -3px #ff00d4, 3px 3px #006eff;
+          box-shadow: -3px -3px #ff00d4, 3px 3px #006eff;
+}
+
+.shadow {
+  color: #ffffff;
+  text-shadow: -3px 0 #ff00d4, 3px 0 #006eff;
+}
+
 .skills {
   background-color: #181727;
   padding: 30px 0 0 0;
@@ -743,6 +750,11 @@ a {
 .courses__item {
   width: 230px;
   margin: 0 10px;
+}
+
+.courses__item:first-child {
+  font-size: 20px;
+  color: #9fff06;
 }
 
 .courses__link {
