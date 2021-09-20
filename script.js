@@ -44,7 +44,8 @@ window.onclick = function(event) {
 // Кнопка наверх
 
 function toggleButtonTop () {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 200 || 
+    document.documentElement.scrollTop > 200) {
     buttonTop.style.display = "block";
   } else {
     buttonTop.style.display = "none";

@@ -347,6 +347,11 @@ a {
   }
 }
 
+.choose-color__input {
+  padding: 0 2px;
+  background-color: #ffee00;
+}
+
 @media (max-width: 767px) {
   .choose-color__input {
     margin: 0 0 10px 0;
@@ -354,6 +359,7 @@ a {
 }
 
 .choose-color__label {
+  color: #ffee00;
   text-align: center;
   text-transform: uppercase;
   font-family: "Roboto Mono",monospace;
