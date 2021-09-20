@@ -139,6 +139,7 @@ a {
 
 .header {
   padding: 15px 0;
+  z-index: 99;
 }
 
 @media (max-width: 767px) {
@@ -508,6 +509,10 @@ a {
   font-size: 14px;
 }
 
+.language {
+  position: relative;
+}
+
 .language__title {
   margin: 0 0 20px 0;
 }
@@ -516,6 +521,87 @@ a {
   font-family: "Roboto Mono",monospace;
   text-transform: uppercase;
   margin: 0 0 5px 0;
+}
+
+.github-button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: #bababa;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px 5px #bababa;
+          box-shadow: 0 0 10px 5px #bababa;
+  animation: circulate 2s linear infinite;
+  -webkit-animation: circulate 2s linear infinite;
+}
+
+@media (max-width: 425px) {
+  .github-button {
+    bottom: 5px;
+    right: calc(100% - 80px);
+  }
+}
+
+.github-button:hover {
+  background-color: #8b0000;
+  -webkit-box-shadow: 0 0 10px 5px #8b0000;
+          box-shadow: 0 0 10px 5px #8b0000;
+}
+
+@-webkit-keyframes circulate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20%, 20%);
+    -webkit-transform: translate(-20%, 20%);
+    -moz-transform: translate(-20%, 20%);
+    -ms-transform: translate(-20%, 20%);
+    -o-transform: translate(-20%, 20%);
+  }
+  50% {
+    transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, 40%);
+    -moz-transform: translate(0%, 40%);
+    -ms-transform: translate(0%, 40%);
+    -o-transform: translate(0%, 40%);
+  }
+  75% {
+    transform: translate(20%, 20%);
+    -webkit-transform: translate(20%, 20%);
+    -moz-transform: translate(20%, 20%);
+    -ms-transform: translate(20%, 20%);
+    -o-transform: translate(20%, 20%);
+  }
+}
+
+@keyframes circulate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20%, 20%);
+    -webkit-transform: translate(-20%, 20%);
+    -moz-transform: translate(-20%, 20%);
+    -ms-transform: translate(-20%, 20%);
+    -o-transform: translate(-20%, 20%);
+  }
+  50% {
+    transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, 40%);
+    -moz-transform: translate(0%, 40%);
+    -ms-transform: translate(0%, 40%);
+    -o-transform: translate(0%, 40%);
+  }
+  75% {
+    transform: translate(20%, 20%);
+    -webkit-transform: translate(20%, 20%);
+    -moz-transform: translate(20%, 20%);
+    -ms-transform: translate(20%, 20%);
+    -o-transform: translate(20%, 20%);
+  }
 }
 
 .main {
@@ -544,6 +630,13 @@ a {
   line-height: 4vw;
   letter-spacing: 1px;
   padding-bottom: 50px;
+}
+
+@media (min-width: 1441px) {
+  .about__paragraph {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 767px) {
