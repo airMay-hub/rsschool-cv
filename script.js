@@ -63,9 +63,11 @@ buttonTop.addEventListener('click', () => {
 
 chooseColor.addEventListener('input', (e) => {
   let color = e.target.value;
+  
   introduction.style.background = `linear-gradient(-45deg, #000000, #181727, ${color})`;
   body.style.background = `linear-gradient(90deg, #000000, #181727, ${color})`;
-  if (window.innerWidth < 768) {
-  header.style.background = `linear-gradient(-45deg, #181727, ${color})`;
-}
+
+    if (window.innerWidth < 768) {
+      header.style.background = `linear-gradient(-45deg, #181727, ${color})`;
+    }
 });
