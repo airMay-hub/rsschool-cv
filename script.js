@@ -59,6 +59,10 @@ buttonTop.addEventListener('click', () => {
     window.scroll(top);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  buttonTop.style.display = "none";
+});
+
 // Выбор цвета
 
 chooseColor.addEventListener('input', (e) => {
