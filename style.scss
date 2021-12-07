@@ -1,12 +1,12 @@
-$var1: #bababa;
-$var2: #181727;
-$var3: #1234c4;
-$var4: #000000;
-$var5: #8b0000;
-$var6: #129b00;
-$var7: #006eff;
-$var8: #ff00d4;
-$var9: #9fff06;
+$grey: #bababa;
+$dark-blue: #181727;
+$blue: #1234c4;
+$black: #000000;
+$dark-red: #8b0000;
+$green: #129b00;
+$light-blue: #006eff;
+$pink: #ff00d4;
+$acid-green: #9fff06;
 
 @import 'null_style';
 
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, $var4, $var2, $var3);
+  background: linear-gradient(90deg, $black, $dark-blue, $blue);
   background-attachment: fixed;
 }
 
@@ -64,8 +64,8 @@ a {
 
 .introduction {
 	width: 100%;
-  background: linear-gradient(-45deg, $var4, $var2, $var3);
-  border-bottom: 1px solid $var1;
+  background: linear-gradient(-45deg, $black, $dark-blue, $blue);
+  border-bottom: 1px solid $grey;
 
   &__person {
     padding: 30px 0 70px 0;
@@ -88,7 +88,7 @@ a {
     position: fixed;
     width: 100%;
     height: 70px;
-    background: linear-gradient(-45deg, $var2, $var3);
+    background: linear-gradient(-45deg, $dark-blue, $blue);
   }
 
   &__navigation {
@@ -118,7 +118,7 @@ a {
           height: 10%;
           width: 100%;
           transition: all 0.3s ease 0s;
-          background-color: $var1;
+          background-color: $grey;
           top: 0;
         }
 
@@ -129,7 +129,7 @@ a {
           height: 10%;
           width: 100%;
           transition: all 0.3s ease 0s;
-          background-color: $var1;
+          background-color: $grey;
           bottom: 0;
         }
 
@@ -139,7 +139,7 @@ a {
           height: 10%;
           width: 100%;
           transition: all 0.3s ease 0s;
-          background-color: $var1;
+          background-color: $grey;
           top: 50%;
           transform: scale(1) translate(0px, -50%);
       }
@@ -227,7 +227,7 @@ a {
       right: 0;
       width: 0%;
       height: 1px;
-      background-color: $var1;
+      background-color: $grey;
       transition: all .5s ease-out;
       -webkit-transition: all .5s ease-out;
       -moz-transition: all .5s ease-out;
@@ -314,7 +314,7 @@ a {
 
   &__img {
     width: 200px;
-    border: solid 1px $var1;
+    border: solid 1px $grey;
 
     @media (max-width: 425px) {
       width: 150px;
@@ -395,7 +395,7 @@ a {
 .title-2 {
 	font-family: "Roboto Mono",monospace;
 	text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .language {
@@ -472,9 +472,9 @@ a {
 }
 
 .about {
-	padding: 30px 0 0 0;
-  border-bottom: 1px solid $var1;
-	background-color: $var4;
+	padding: 80px 0;
+  border-bottom: 1px solid $grey;
+	background-color: $black;
 
 	&__title {
 		margin: 0 0 30px 0;
@@ -482,8 +482,8 @@ a {
   
 	&__paragraph {
 		font-family: "Michroma",sans-serif;
-		font-size: 2.6vw;
-		line-height: 4vw;
+		font-size: 2vw;
+		line-height: 3vw;
 		letter-spacing: 1px;
 		padding-bottom: 50px;
 
@@ -501,20 +501,19 @@ a {
 }
 
 .block-shadow {
-  box-shadow: -3px -3px $var8, 3px 3px $var7;
+  box-shadow: -3px -3px $pink, 3px 3px $light-blue;
 }
 
 .shadow {
   color: #ffffff;
-  text-shadow: -3px 0 $var8, 3px 0 $var7;
+  text-shadow: -3px 0 $pink, 3px 0 $light-blue;
 }
 
 .skills {
-  margin: 60px 0;
-	padding: 30px 0 0 0;
-  border-top: 1px solid $var1;
-  border-bottom: 1px solid $var1;
-	background-color: $var2;
+	padding: 120px 0;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+	background-color: $dark-blue;
 
 	&__title {
 		margin: 0 0 30px 0;
@@ -526,6 +525,7 @@ a {
   &__flex {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-between;
   }
 }
@@ -539,23 +539,23 @@ a {
 }
 
 .red {
-  color: $var5;
+  color: $dark-red;
 }
 
 .green {
-  color: $var6;
+  color: $green;
 }
 
 .blue {
-  color: $var7;
+  color: $light-blue;
 }
 
 .pink {
-  color: $var8;
+  color: $pink;
 }
 
 .acid {
-  color: $var9;
+  color: $acid-green;
 }
 
 .skill-item {
@@ -571,10 +571,10 @@ a {
 }
 
 .education {
-	background-color: $var4;
-  padding: 60px 0 20px 0;
-  border-top: 1px solid $var1;
-  border-bottom: 1px solid $var1;
+	background-color: $black;
+  padding: 120px 0;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
 
 	&__title {
 		margin: 0 0 30px 0;
@@ -587,8 +587,8 @@ a {
 		font-family: "Michroma",sans-serif;
 		font-size: 16px;
 		line-height: 30px;
-		padding: 20px 0 20px 0;
-    border-bottom: 1px solid $var1;
+		padding: 30px 0;
+    border-bottom: 1px solid $grey;
 
     @media (max-width: 767px) {
       font-size: 14px;
@@ -612,7 +612,7 @@ a {
 
     &:first-child {
       font-size: 20px;
-      color: $var9;
+      color: $acid-green;
     }
   }
 
@@ -622,10 +622,9 @@ a {
 }
 
 .projects {
-  margin: 60px 0 0 0;
-  padding: 30px 0;
-  border-top: 1px solid $var1;
-	background-color: $var2;
+  padding: 60px 0;
+  border-top: 1px solid $grey;
+	background-color: $dark-blue;
 
   &__flex {
     margin: 30px 0;
@@ -649,7 +648,7 @@ a {
 
   &__img {
     width: 300px;
-    border: 1px solid $var1;
+    border: 1px solid $grey;
     transition: all 0.3s ease 0s;
 
     @media (max-width: 767px) {
@@ -695,14 +694,14 @@ a {
 
   &__call {
     font-family: "Roboto Mono",monospace;
-    color: $var9;
+    color: $acid-green;
   }
 }
 
 .subtitle {
   font-family: "Roboto Mono",monospace;
   font-size: 16px;
-  color: $var8;
+  color: $pink;
 }
 
 .title-3 {
@@ -712,9 +711,9 @@ a {
 }
 
 .code-example {
-  padding: 30px 0;
-  border-top: 1px solid $var1;
-  border-bottom: 1px solid $var1;
+  padding: 120px 0;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
   background-color: #090300;
 }
 
@@ -746,13 +745,13 @@ a {
 }
 
 .top {
-  color: $var1;
+  color: $grey;
   font-family: "Roboto Mono",monospace;
 }
 
 
 .footer {
-  background-color: $var2;
+  background-color: $dark-blue;
   padding: 30px 0;
 
   &__inner {
